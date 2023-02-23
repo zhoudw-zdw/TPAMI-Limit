@@ -38,7 +38,7 @@ The following packages are required to run the scripts:
 
 - tqdm
 
-- Download the [pretrained models](https://drive.google.com/drive/folders/11liacLA6F4uz_SWAPLYQshlzLMXMzDkB?usp=sharing) and put them in ./params
+- Download the [pretrained models](https://drive.google.com/drive/folders/11liacLA6F4uz_SWAPLYQshlzLMXMzDkB?usp=sharing) and put them in ./params. Note that these pre-trained models are only trained with cross-entropy with the base dataset, and it should be distinguished from the models pre-trained on large-scale datasets.
 
 ## Dataset
 We provide the source code on three benchmark datasets, i.e., CIFAR100, CUB200 and miniImageNet. Please follow the guidelines in [CEC](https://github.com/icoz69/CEC-CVPR2021) to prepare them.
