@@ -1,10 +1,10 @@
 
 # Few-Shot Class-Incremental Learning by Sampling Multi-Phase Tasks  (LIMIT)
 
-The code repository for ["Few-Shot Class-Incremental Learning by Sampling Multi-Phase Tasks"](https://ieeexplore.ieee.org/document/9864267) (TPAMI 2022) in PyTorch. If you use any content of this repo for your work, please cite the following bib entry:
+The code repository for ["Few-Shot Class-Incremental Learning by Sampling Multi-Phase Tasks"](https://ieeexplore.ieee.org/document/9864267) (TPAMI 2023) in PyTorch. If you use any content of this repo for your work, please cite the following bib entry:
 
        
-       @ARTICLE{zhou2022few,
+       @ARTICLE{zhou2023few,
        author={Zhou, Da-Wei and Ye, Han-Jia and Ma, Liang and Xie, Di and Pu, Shiliang and Zhan, De-Chuan},
        journal={IEEE Transactions on Pattern Analysis and Machine Intelligence}, 
        title={Few-Shot Class-Incremental Learning by Sampling Multi-Phase Tasks}, 
