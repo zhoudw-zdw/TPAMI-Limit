@@ -74,7 +74,7 @@ There are four parts in the code.
 
 Remember to change `YOURDATAROOT` into your own data root, or you will encounter errors.
 
-  
+Using the definitely same scripts above, you are supposed to reproduce the results in [cifar.txt](https://github.com/zhoudw-zdw/TPAMI-Limit/blob/main/imgs/cifar.txt), [cub.txt](https://github.com/zhoudw-zdw/TPAMI-Limit/blob/main/imgs/cub.txt), and [mini.txt](https://github.com/zhoudw-zdw/TPAMI-Limit/blob/main/imgs/mini.txt).
 
  
 ## Acknowledgment
