@@ -1,0 +1,229 @@
+manual seed: 1
+{'autoaug': 1,
+ 'base_mode': 'ft_cos',
+ 'batch_size_base': 128,
+ 'batch_size_new': 0,
+ 'dataroot': 'data/',
+ 'dataset': 'cifar100',
+ 'decay': 0.0005,
+ 'episode_query': 15,
+ 'episode_shot': 1,
+ 'episode_way': 15,
+ 'epochs_base': 20,
+ 'epochs_new': 100,
+ 'exemplar_num': 20,
+ 'gamma': 0.3,
+ 'gpu': '3',
+ 'low_shot': 1,
+ 'low_way': 15,
+ 'lr_base': 0.0002,
+ 'lr_new': 0.1,
+ 'lrg': 0.0002,
+ 'maml': 0,
+ 'manyshot': 100,
+ 'meta_class_way': 60,
+ 'meta_new_class': 5,
+ 'milestones': [2, 4, 6],
+ 'model_dir': './params/pretrain_CIFAR.pth',
+ 'momentum': 0.9,
+ 'new_mode': 'avg_cos',
+ 'not_data_init': False,
+ 'num_tasks': 32,
+ 'num_workers': 8,
+ 'project': 'limit',
+ 'sample_class': 16,
+ 'sample_shot': 1,
+ 'schedule': 'Milestone',
+ 'seed': 1,
+ 'set_no_val': False,
+ 'shot_num': 5,
+ 'stage': 1,
+ 'start_session': 0,
+ 'step': 20,
+ 'temperature': 16.0,
+ 'test_batch_size': 100,
+ 'train_episode': 50,
+ 'tune_epoch': 5}
+use gpu: [3]
+create folder: checkpoint/cifar100/limit/16SC-20Epo-16.00T-1Sshot0.00050Dec-0.90Mom-128Q_Lr1_0.000200-Lrg_0.00020-MS_2_4_6-Gam_0.30
+Loading init parameters from: ./params/pretrain_CIFAR.pth
+pytorch_total_params 278224
+<class 'models.limit.Network.MYNET'>
+Loading init parameters from: ./params/pretrain_CIFAR.pth
+Files already downloaded and verified
+new classes for this session:
+ [ 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23
+ 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47
+ 48 49 50 51 52 53 54 55 56 57 58 59]
+Session 0, epo 0, lrc=0.0002,total loss=1.5923 query acc=0.5703
+Self.current_way: 16
+********A better model is found!!**********
+Saving model to :checkpoint/cifar100/limit/16SC-20Epo-16.00T-1Sshot0.00050Dec-0.90Mom-128Q_Lr1_0.000200-Lrg_0.00020-MS_2_4_6-Gam_0.30/session0_max_acc.pth
+best epoch 0, best val acc=70.908
+epoch:000,lr:0.0002,training_loss:1.79819,training_acc:0.53899,val_loss:1.00168,val_acc:0.70908
+This epoch takes 51 seconds 
+still need around 17.18 mins to finish
+Session 0, epo 1, lrc=0.0002,total loss=0.5926 query acc=0.8333
+Self.current_way: 16
+********A better model is found!!**********
+Saving model to :checkpoint/cifar100/limit/16SC-20Epo-16.00T-1Sshot0.00050Dec-0.90Mom-128Q_Lr1_0.000200-Lrg_0.00020-MS_2_4_6-Gam_0.30/session0_max_acc.pth
+best epoch 1, best val acc=71.215
+epoch:001,lr:0.0002,training_loss:0.64075,training_acc:0.80878,val_loss:0.99970,val_acc:0.71215
+This epoch takes 55 seconds 
+still need around 17.44 mins to finish
+Session 0, epo 2, lrc=0.0001,total loss=0.7540 query acc=0.7572
+Self.current_way: 16
+********A better model is found!!**********
+Saving model to :checkpoint/cifar100/limit/16SC-20Epo-16.00T-1Sshot0.00050Dec-0.90Mom-128Q_Lr1_0.000200-Lrg_0.00020-MS_2_4_6-Gam_0.30/session0_max_acc.pth
+best epoch 2, best val acc=71.538
+epoch:002,lr:0.0001,training_loss:0.60954,training_acc:0.81976,val_loss:1.00382,val_acc:0.71538
+This epoch takes 58 seconds 
+still need around 17.65 mins to finish
+Session 0, epo 3, lrc=0.0001,total loss=0.3488 query acc=0.9173
+Self.current_way: 16
+best epoch 2, best val acc=71.538
+epoch:003,lr:0.0001,training_loss:0.59007,training_acc:0.82293,val_loss:1.01721,val_acc:0.71323
+This epoch takes 37 seconds 
+still need around 10.57 mins to finish
+Session 0, epo 4, lrc=0.0000,total loss=0.9358 query acc=0.7044
+Self.current_way: 16
+********A better model is found!!**********
+Saving model to :checkpoint/cifar100/limit/16SC-20Epo-16.00T-1Sshot0.00050Dec-0.90Mom-128Q_Lr1_0.000200-Lrg_0.00020-MS_2_4_6-Gam_0.30/session0_max_acc.pth
+best epoch 4, best val acc=71.538
+epoch:004,lr:0.0000,training_loss:0.59857,training_acc:0.82227,val_loss:1.01193,val_acc:0.71538
+This epoch takes 55 seconds 
+still need around 14.91 mins to finish
+Session 0, epo 5, lrc=0.0000,total loss=0.4076 query acc=0.9030
+Self.current_way: 16
+best epoch 4, best val acc=71.538
+epoch:005,lr:0.0000,training_loss:0.58198,training_acc:0.82703,val_loss:1.01121,val_acc:0.71508
+This epoch takes 48 seconds 
+still need around 12.03 mins to finish
+Session 0, epo 6, lrc=0.0000,total loss=0.4539 query acc=0.8411
+Self.current_way: 16
+best epoch 4, best val acc=71.538
+epoch:006,lr:0.0000,training_loss:0.57605,training_acc:0.82859,val_loss:1.01330,val_acc:0.71523
+This epoch takes 50 seconds 
+still need around 11.77 mins to finish
+Session 0, epo 7, lrc=0.0000,total loss=0.6457 query acc=0.7780
+Self.current_way: 16
+********A better model is found!!**********
+Saving model to :checkpoint/cifar100/limit/16SC-20Epo-16.00T-1Sshot0.00050Dec-0.90Mom-128Q_Lr1_0.000200-Lrg_0.00020-MS_2_4_6-Gam_0.30/session0_max_acc.pth
+best epoch 7, best val acc=71.569
+epoch:007,lr:0.0000,training_loss:0.58800,training_acc:0.82515,val_loss:1.01355,val_acc:0.71569
+This epoch takes 60 seconds 
+still need around 13.18 mins to finish
+Session 0, epo 8, lrc=0.0000,total loss=0.4518 query acc=0.8268
+Self.current_way: 16
+********A better model is found!!**********
+Saving model to :checkpoint/cifar100/limit/16SC-20Epo-16.00T-1Sshot0.00050Dec-0.90Mom-128Q_Lr1_0.000200-Lrg_0.00020-MS_2_4_6-Gam_0.30/session0_max_acc.pth
+best epoch 8, best val acc=71.615
+epoch:008,lr:0.0000,training_loss:0.58189,training_acc:0.82831,val_loss:1.01447,val_acc:0.71615
+This epoch takes 51 seconds 
+still need around 10.22 mins to finish
+Session 0, epo 9, lrc=0.0000,total loss=0.5013 query acc=0.8522
+Self.current_way: 16
+********A better model is found!!**********
+Saving model to :checkpoint/cifar100/limit/16SC-20Epo-16.00T-1Sshot0.00050Dec-0.90Mom-128Q_Lr1_0.000200-Lrg_0.00020-MS_2_4_6-Gam_0.30/session0_max_acc.pth
+best epoch 9, best val acc=71.631
+epoch:009,lr:0.0000,training_loss:0.58050,training_acc:0.82755,val_loss:1.01402,val_acc:0.71631
+This epoch takes 39 seconds 
+still need around 7.18 mins to finish
+Session 0, epo 10, lrc=0.0000,total loss=0.7544 query acc=0.7832
+Self.current_way: 16
+********A better model is found!!**********
+Saving model to :checkpoint/cifar100/limit/16SC-20Epo-16.00T-1Sshot0.00050Dec-0.90Mom-128Q_Lr1_0.000200-Lrg_0.00020-MS_2_4_6-Gam_0.30/session0_max_acc.pth
+best epoch 10, best val acc=71.708
+epoch:010,lr:0.0000,training_loss:0.58080,training_acc:0.82776,val_loss:1.01443,val_acc:0.71708
+This epoch takes 66 seconds 
+still need around 11.09 mins to finish
+Session 0, epo 11, lrc=0.0000,total loss=0.5730 query acc=0.8307
+Self.current_way: 16
+best epoch 10, best val acc=71.708
+epoch:011,lr:0.0000,training_loss:0.57803,training_acc:0.82874,val_loss:1.01509,val_acc:0.71662
+This epoch takes 38 seconds 
+still need around 5.81 mins to finish
+Session 0, epo 12, lrc=0.0000,total loss=0.5274 query acc=0.7930
+Self.current_way: 16
+best epoch 10, best val acc=71.708
+epoch:012,lr:0.0000,training_loss:0.56925,training_acc:0.82986,val_loss:1.01556,val_acc:0.71692
+This epoch takes 55 seconds 
+still need around 7.41 mins to finish
+Session 0, epo 13, lrc=0.0000,total loss=0.4621 query acc=0.8255
+Self.current_way: 16
+best epoch 10, best val acc=71.708
+epoch:013,lr:0.0000,training_loss:0.57825,training_acc:0.82791,val_loss:1.01623,val_acc:0.71631
+This epoch takes 56 seconds 
+still need around 6.57 mins to finish
+Session 0, epo 14, lrc=0.0000,total loss=0.8116 query acc=0.7253
+Self.current_way: 16
+best epoch 10, best val acc=71.708
+epoch:014,lr:0.0000,training_loss:0.57487,training_acc:0.82995,val_loss:1.01642,val_acc:0.71585
+This epoch takes 48 seconds 
+still need around 4.87 mins to finish
+Session 0, epo 15, lrc=0.0000,total loss=0.4718 query acc=0.8314
+Self.current_way: 16
+best epoch 10, best val acc=71.708
+epoch:015,lr:0.0000,training_loss:0.58189,training_acc:0.82591,val_loss:1.01643,val_acc:0.71708
+This epoch takes 47 seconds 
+still need around 3.94 mins to finish
+Session 0, epo 16, lrc=0.0000,total loss=0.6616 query acc=0.8105
+Self.current_way: 16
+best epoch 10, best val acc=71.708
+epoch:016,lr:0.0000,training_loss:0.57956,training_acc:0.82689,val_loss:1.01631,val_acc:0.71631
+This epoch takes 61 seconds 
+still need around 4.11 mins to finish
+Session 0, epo 17, lrc=0.0000,total loss=0.6207 query acc=0.7904
+Self.current_way: 16
+best epoch 10, best val acc=71.708
+epoch:017,lr:0.0000,training_loss:0.57578,training_acc:0.82976,val_loss:1.01586,val_acc:0.71600
+This epoch takes 37 seconds 
+still need around 1.88 mins to finish
+Session 0, epo 18, lrc=0.0000,total loss=0.5700 query acc=0.8516
+Self.current_way: 16
+best epoch 10, best val acc=71.708
+epoch:018,lr:0.0000,training_loss:0.57113,training_acc:0.83081,val_loss:1.01719,val_acc:0.71692
+This epoch takes 59 seconds 
+still need around 2.00 mins to finish
+Session 0, epo 19, lrc=0.0000,total loss=0.6653 query acc=0.8171
+Self.current_way: 16
+best epoch 10, best val acc=71.708
+epoch:019,lr:0.0000,training_loss:0.56015,training_acc:0.83432,val_loss:1.01663,val_acc:0.71708
+This epoch takes 62 seconds 
+still need around 1.05 mins to finish
+The test acc of base session=76.117
+training session: [1]
+Seen Acc: 0.7539999999999999 Unseen ACC: 0.274
+Saving model to :checkpoint/cifar100/limit/16SC-20Epo-16.00T-1Sshot0.00050Dec-0.90Mom-128Q_Lr1_0.000200-Lrg_0.00020-MS_2_4_6-Gam_0.30/session1_max_acc.pth
+  test acc=71.708
+training session: [2]
+Seen Acc: 0.7454999999999999 Unseen ACC: 0.248
+Saving model to :checkpoint/cifar100/limit/16SC-20Epo-16.00T-1Sshot0.00050Dec-0.90Mom-128Q_Lr1_0.000200-Lrg_0.00020-MS_2_4_6-Gam_0.30/session2_max_acc.pth
+  test acc=67.443
+training session: [3]
+Seen Acc: 0.738 Unseen ACC: 0.2113333333333333
+Saving model to :checkpoint/cifar100/limit/16SC-20Epo-16.00T-1Sshot0.00050Dec-0.90Mom-128Q_Lr1_0.000200-Lrg_0.00020-MS_2_4_6-Gam_0.30/session3_max_acc.pth
+  test acc=63.267
+training session: [4]
+Seen Acc: 0.732 Unseen ACC: 0.2045
+Saving model to :checkpoint/cifar100/limit/16SC-20Epo-16.00T-1Sshot0.00050Dec-0.90Mom-128Q_Lr1_0.000200-Lrg_0.00020-MS_2_4_6-Gam_0.30/session4_max_acc.pth
+  test acc=60.012
+training session: [5]
+Seen Acc: 0.7258333333333333 Unseen ACC: 0.2052
+Saving model to :checkpoint/cifar100/limit/16SC-20Epo-16.00T-1Sshot0.00050Dec-0.90Mom-128Q_Lr1_0.000200-Lrg_0.00020-MS_2_4_6-Gam_0.30/session5_max_acc.pth
+  test acc=57.271
+training session: [6]
+Seen Acc: 0.7234999999999999 Unseen ACC: 0.21033333333333334
+Saving model to :checkpoint/cifar100/limit/16SC-20Epo-16.00T-1Sshot0.00050Dec-0.90Mom-128Q_Lr1_0.000200-Lrg_0.00020-MS_2_4_6-Gam_0.30/session6_max_acc.pth
+  test acc=55.244
+training session: [7]
+Seen Acc: 0.7215 Unseen ACC: 0.20457142857142857
+Saving model to :checkpoint/cifar100/limit/16SC-20Epo-16.00T-1Sshot0.00050Dec-0.90Mom-128Q_Lr1_0.000200-Lrg_0.00020-MS_2_4_6-Gam_0.30/session7_max_acc.pth
+  test acc=53.105
+training session: [8]
+Seen Acc: 0.7143333333333335 Unseen ACC: 0.20125
+Saving model to :checkpoint/cifar100/limit/16SC-20Epo-16.00T-1Sshot0.00050Dec-0.90Mom-128Q_Lr1_0.000200-Lrg_0.00020-MS_2_4_6-Gam_0.30/session8_max_acc.pth
+  test acc=50.910
+[76.117, 71.708, 67.443, 63.267, 60.012, 57.271, 55.244, 53.105, 50.91]
+Best epoch: 10
+Total time used 18.56 mins
